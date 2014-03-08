@@ -3,7 +3,13 @@ Simple node service for grabbing bus route information.
 
 ##Usage:
 ```javascript
+//Using a promise
 var myBus = new Bus(11).then(function(bus) {
+    //access to methods on bus
+});
+
+//Using a callback
+var myBus = new Bus(11, function(bus) {
     //access to methods on bus
 });
 ```
