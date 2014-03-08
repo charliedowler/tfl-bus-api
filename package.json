@@ -1,0 +1,31 @@
+{
+  "name": "tfl-bus-api",
+  "version": "0.0.1",
+  "description": "Grab bus info",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/charliedowler/tfl-bus-api.git"
+  },
+  "keywords": [
+    "bus",
+    "tfl"
+  ],
+  "author": "charliedowler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charliedowler/tfl-bus-api/issues"
+  },
+  "homepage": "https://github.com/charliedowler/tfl-bus-api",
+  "dependencies": {
+    "request": "~2.34.0",
+    "q": "~1.0.0",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "nock": "~0.27.2"
+  }
+}
