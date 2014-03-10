@@ -1,4 +1,4 @@
-#tfl-bus-api (WIP)
+#tfl-bus-api (WIP) [![Build Status](https://travis-ci.org/charliedowler/tfl-bus-api.png?branch=master)](https://travis-ci.org/charliedowler/tfl-bus-api)
 Simple node service for grabbing bus route information.
 
 ##Usage:
@@ -16,9 +16,9 @@ var myBus = new Bus(11, function(bus) {
 
 ###Methods:
 ```javascript
-bus.start() //Return lat & lng for first bus stop
+bus.first() //Return lat & lng for first bus stop
 
-bus.end() //Return lat & lng for last bus stop
+bus.last() //Return lat & lng for last bus stop
 
 /**
  * Search list of stops by smsCode/name displayed on stop sign
