@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/charliedowler/tfl-bus-api.git"
+    "url": "git://github.com/charliedowler/tfl-bus-api.git",
+    "job": "https://api.travis-ci.org/repositories/charliedowler/tfl-bus-api"
   },
   "keywords": [
     "bus",
