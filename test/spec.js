@@ -24,3 +24,12 @@ vows.describe('Start & End of bus route').addBatch({
     });
   }
 }).run();
+vows.describe('findStopBySmsCode').addBatch({
+  'exists': function() {
+    var BusNumber = 151;
+    nock('http://countdown.tfl.gov.uk').get('/search?searchTerm=' + BusNumber).reply(200, ExpectedResponse[BusNumber]);
+    var myBus = new Bus(BusNumber, function(bus) {
+      assert.equal(typeof bus.findStopBySmsCode(58210) != 'undefined', true);
+    });
+  }
+}).run()
