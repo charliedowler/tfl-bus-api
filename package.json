@@ -8,8 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/charliedowler/tfl-bus-api.git",
-    "job": "https://api.travis-ci.org/repositories/charliedowler/tfl-bus-api"
+    "url": "git://github.com/charliedowler/tfl-bus-api.git"
   },
   "keywords": [
     "bus",
@@ -22,12 +21,12 @@
   },
   "homepage": "https://github.com/charliedowler/tfl-bus-api",
   "dependencies": {
-    "request": "~2.34.0",
-    "q": "~1.0.0",
-    "underscore": "~1.7.0"
+    "request": "^2.40.0",
+    "q": "^1.0.1",
+    "underscore": "^1.7.0"
   },
   "devDependencies": {
-    "nock": "~0.27.2",
-    "vows": "~0.7.0"
+    "nock": "^0.46.0 ",
+    "vows": "^0.7.0"
   }
 }
