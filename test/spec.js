@@ -29,7 +29,7 @@ vows.describe('findStopBySmsCode').addBatch({
     var BusNumber = 151;
     nock('http://countdown.tfl.gov.uk').get('/search?searchTerm=' + BusNumber).reply(200, ExpectedResponse[BusNumber]);
     var myBus = new Bus(BusNumber, function(bus) {
-      assert.equal(typeof bus.findStopBySmsCode(58210) != 'undefined', true);
+      assert.equal(typeof bus.findStopBySmsCode(49524) != 'undefined', true);
     });
   }
-}).run()
+}).run();
